@@ -1,0 +1,80 @@
+/* Navbar.css */
+
+.navbar {
+  background-color:  #a67c52;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-brand span {
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Links container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-links li:last-child {
+    margin-bottom: 0;
+  }
+}

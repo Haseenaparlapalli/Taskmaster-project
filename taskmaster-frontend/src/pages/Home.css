@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf8f4;
+  color: #3e322c;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #f4e7dc, #fdf6ee);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #3e322c;
+  margin-bottom: 15px;
+}
+
+.brand {
+  color: #a67c52;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #5a5248;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 28px;
+  background-color: #a67c52;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #8c6b45;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #a67c52;
+  border: 2px solid #a67c52;
+}
+
+.btn-outline:hover {
+  background-color: #a67c52;
+  color: white;
+}
+
+/* Features */
+.features {
+  background-color: #fdf8f4;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #3e322c;
+  font-family: 'Playfair Display', serif;
+}
+
+.features ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.features li {
+  background-color: #f6f1ec;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: #4a423c;
+}
+
+/* About */
+.about {
+  background: #fff8f3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #5a5248;
+}
+
+/* Footer */
+.footer {
+  background-color: #e9dfd3;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #5a5248;
+  font-family: 'Inter', sans-serif;
+  margin-top: auto;
+}
+
+/* ------------------------ */
+/* 📱 Responsive Section 🔽 */
+/* ------------------------ */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 20px 40px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .features ul {
+    grid-template-columns: 1fr;
+  }
+
+  .features h2,
+  .about h2 {
+    font-size: 1.6rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
